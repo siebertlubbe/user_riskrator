@@ -1,11 +1,15 @@
-= UserRiskrator
+UserRiskrator
+=============
 
-
-== Important note
+Important note
+--------------
 
 This plugin is just a concept (at the moment). Do not use it in production.
 
-== The idea
+
+The idea
+--------
+
 We'd like to identify user accounts with suspicious activity. This is with with
 aim to identify and address:
 - possible compromised accounts,
@@ -25,7 +29,8 @@ multiple exceptions is very suspicious.
 activity.
 
 
-== So, what do I get
+So, what do you get
+-------------------
 
   >> user = User.first
   => #<User id: 1, login: "siebert", ... , remember_token_expires_at: nil>
