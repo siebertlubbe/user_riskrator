@@ -34,14 +34,14 @@ activity.
 So, what do you get
 -------------------
 
->  >> user = User.first
->  => #<User id: 1, login: "siebert", ... , remember_token_expires_at: nil>
->  >> user.risk_rating
->  => 13
->  >> user.log_risky_event("FailedLoginAttempt")
->  => true
->  >> user.risky_events
->  => [#<RiskyEvent id: 1, event: "Failed login attempt", risk_rating: 5, ...">]
+ > >> user = User.first
+ > => #<User id: 1, login: "siebert", ... , remember_token_expires_at: nil>
+ > >> user.risk_rating
+ > => 13
+ > >> user.log_risky_event("FailedLoginAttempt")
+ > => true
+ > >> user.risky_events
+ > => [#<RiskyEvent id: 1, event: "Failed login attempt", risk_rating: 5, ...">]
 
 
 
