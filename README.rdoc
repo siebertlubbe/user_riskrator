@@ -8,9 +8,9 @@ This plugin is just a concept (at the moment). Do not use it in production.
 == The idea
 We'd like to identify user accounts with suspicious activity. This is with with
 aim to identify and address:
- - possible compromised accounts,
- - users with alicious intent, and
- - attempts to bridge our application's security.
+- possible compromised accounts,
+- users with alicious intent, and
+- attempts to bridge our application's security.
 
 We aim to achieve this by monitoring user's activity accross time for multiple
 requests. For example:
@@ -27,14 +27,14 @@ activity.
 
 == So, what do I get
 
-    >> user = User.first
-    => #<User id: 1, login: "siebert", ... , remember_token_expires_at: nil>
-    >> user.risk_rating
-    => 13
-    >> user.log_risky_event("FailedLoginAttempt")
-    => true
-    >> user.risky_events
-    => [#<RiskyEvent id: 1, event: "Failed login attempt", risk_rating: 5, ...">]
+  >> user = User.first
+  => #<User id: 1, login: "siebert", ... , remember_token_expires_at: nil>
+  >> user.risk_rating
+  => 13
+  >> user.log_risky_event("FailedLoginAttempt")
+  => true
+  >> user.risky_events
+  => [#<RiskyEvent id: 1, event: "Failed login attempt", risk_rating: 5, ...">]
 
 
 
